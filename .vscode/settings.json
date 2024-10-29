@@ -1,6 +1,11 @@
 {
     "files.associations": {
         "*.cpp": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "ctype.h": "c",
+        "stdio.h": "c",
+        "stdbool.h": "c",
+        "math.h": "c",
+        "stdlib.h": "c"
     }
 }

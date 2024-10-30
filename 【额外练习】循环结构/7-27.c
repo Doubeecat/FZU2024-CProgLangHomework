@@ -11,15 +11,12 @@ Undo the destiny.
 #define ll long long
 
 int main() {
-    ll p;scanf("%lld",&p);
-    for (ll a = 1;a <= 2000;++a) {
-        for (ll b = 1;b <= a;++b) {
-            if (a*a*a - b*b*b == p) {
-                puts("YES");
-                return 0;
-            }
-        } 
+    int n;scanf("%d",&n);
+    double ans = 0,ans2 = 0;
+    for (int i = 1;i <= n;++i) {
+        double x,y;scanf("%lf %lf",&x,&y);
+        ans += x;ans2 += y;
     }
-    puts("NO");
+    printf("%.3lf\n",ans/ans2);
     return 0;
 }

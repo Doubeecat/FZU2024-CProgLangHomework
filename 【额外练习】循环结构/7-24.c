@@ -9,17 +9,13 @@ Undo the destiny.
 #define max(a,b) (a > b ? a : b)
 #define min(a,b) (a < b ? a : b)
 #define ll long long
-
+int n,f[11010];
 int main() {
-    ll p;scanf("%lld",&p);
-    for (ll a = 1;a <= 2000;++a) {
-        for (ll b = 1;b <= a;++b) {
-            if (a*a*a - b*b*b == p) {
-                puts("YES");
-                return 0;
-            }
-        } 
+    scanf("%d",&n);
+    f[1] = f[2] = 1;
+    for (int i = 3;i <= n;++i) {
+        f[i] = f[i-1] + f[i-2];
     }
-    puts("NO");
+    printf("%d\n",f[n]);
     return 0;
 }

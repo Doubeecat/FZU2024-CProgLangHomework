@@ -9,17 +9,15 @@ Undo the destiny.
 #define max(a,b) (a > b ? a : b)
 #define min(a,b) (a < b ? a : b)
 #define ll long long
-
+int n;
 int main() {
-    ll p;scanf("%lld",&p);
-    for (ll a = 1;a <= 2000;++a) {
-        for (ll b = 1;b <= a;++b) {
-            if (a*a*a - b*b*b == p) {
-                puts("YES");
-                return 0;
-            }
-        } 
+    scanf("%d",&n);
+    int ans = 0;
+    for (int i = 1;i < n;++i) {
+        if (n % i == 0) ans += i;
     }
-    puts("NO");
+    printf("%d ",ans);
+    if (ans == n) puts("YES");
+    else puts("NO");
     return 0;
 }

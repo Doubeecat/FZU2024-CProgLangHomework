@@ -14,6 +14,11 @@ Undo the destiny.
 
 
 int main() {
-
+    int x;read(x);
+    int ans = 4;
+    if (x == 5) ans += 2;
+    if (x == 6) ans += 6;
+    if (x == 7) ans += 4;
+    printf("%d\n",ans);
     return 0;
 }

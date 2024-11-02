@@ -14,6 +14,11 @@ Undo the destiny.
 
 
 int main() {
-
+    double x;scanf("%lf",&x);
+    double ans = 0;
+    if (x < 1) ans = x;
+    else if (x < 10) ans = sqrt(2*x-1);
+    else ans = log(3*x-11);
+    printf("%.3lf\n",ans);
     return 0;
 }

@@ -14,6 +14,8 @@ Undo the destiny.
 
 
 int main() {
-
+    char c = getchar();
+    if (isdigit(c)) printf("%d\n",c);
+    else puts("input error");
     return 0;
 }

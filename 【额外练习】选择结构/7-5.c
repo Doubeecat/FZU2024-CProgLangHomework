@@ -14,6 +14,7 @@ Undo the destiny.
 
 
 int main() {
-
+    double a,b;scanf("%lf %lf\n",&a,&b);
+    printf("%.3lf %.3lf",max(a,b),min(a,b));
     return 0;
 }

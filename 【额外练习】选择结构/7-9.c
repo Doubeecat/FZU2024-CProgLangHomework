@@ -14,6 +14,8 @@ Undo the destiny.
 
 
 int main() {
-
+    int a,b,c;read(a);read(b);read(c);
+    if ((a+b>c)&&(a+c>b)&&(b+c>a)) puts("Yes");
+    else puts("No");
     return 0;
 }

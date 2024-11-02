@@ -14,6 +14,8 @@ Undo the destiny.
 
 
 int main() {
-
+    int x;read(x);
+    if (x % 2) puts("YES");
+    else puts("NO");
     return 0;
 }

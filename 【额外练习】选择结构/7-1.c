@@ -9,11 +9,12 @@ Undo the destiny.
 #include <stdio.h>
 #define max(a,b) (a > b ? a : b)
 #define min(a,b) (a < b ? a : b)
-#define ll long long
 #define read(a) {char c;while((c=getchar())>47) a=a*10+(c^48);}
 
-
+#define ll long long
+int a,b;
 int main() {
-
+    read(a);read(b);
+    printf("%d\n",min(a,b));
     return 0;
 }

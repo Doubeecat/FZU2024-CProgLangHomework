@@ -1,0 +1,8 @@
+s = input()
+
+if s.isupper():
+    s = s.lower()
+else:
+    s = s.upper()
+
+print(s)

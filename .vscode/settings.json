@@ -9,5 +9,6 @@
         "stdlib.h": "c",
         "random": "c",
         "string.h": "c"
-    }
+    },
+    "python.REPL.enableREPLSmartSend": false
 }
